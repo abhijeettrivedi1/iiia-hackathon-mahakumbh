@@ -1,14 +1,21 @@
-import React from 'react'
-import MyMap from './map'
-const CrowdManagement = () => {
-  return (
-    <div>
-       
-       <div style={{display : "flex" , alignItems : "center" , justifyContent : "center"}}>
-       <MyMap />
-       </div>
-    </div>
-  )
-}
+import React , {useState , useEffect} from 'react';
+import MyMap from './map';
+import Table from './Table';
 
-export default CrowdManagement
+const CrowdManagement = () => {
+ 
+  // console.log(data)
+  return (
+    <div style={{ display: 'flex', justifyContent: 'centre' , flexDirection : "column" , alignItems : "center" }}>
+      <div style={{ width: '80%' }}>
+        <MyMap />
+      </div>
+      <div style={{ width: '80%' }}>
+        <Table />
+      </div>
+      {/* {console.log(data)} */}
+    </div>
+  );
+};
+
+export default CrowdManagement;
