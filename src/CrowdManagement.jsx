@@ -6,8 +6,16 @@ import Table from './Table';
 const CrowdManagement = () => {
  
   // console.log(data)
-  return (
+  return (<>
+    <h1 style={{"font-size":"100"}}>
+    Crowd Management System
+  </h1>
     <div style={{ display: 'flex', justifyContent: 'centre' , flexDirection : "column" , alignItems : "center" }}>
+    
+        <h1 style={{"font-size":"100"}}>
+          Crowd Management System
+        </h1>
+      
       <div style={{ width: '80%' }}>
         <MyMap />
       </div>
@@ -16,6 +24,7 @@ const CrowdManagement = () => {
       </div>
       {/* {console.log(data)} */}
     </div>
+    </>
   );
 };
 

@@ -16,6 +16,9 @@ export default function Header() {
                 <Link to={"/traffic"} className="text-white hover:text-red-900 transition duration-300 ease-in-out mr-4 text-lg">
                     Traffic Management
                 </Link>
+                <Link to={"/crowdmanagement"} className="text-white hover:text-red-900 transition duration-300 ease-in-out mr-4 text-lg">
+                   Crowd Management
+                </Link>
                 
                 
             </div>
