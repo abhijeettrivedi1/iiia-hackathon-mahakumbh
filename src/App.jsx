@@ -4,8 +4,8 @@ import Layout from './Layout';
 import IndexPage from './IndexPage';
 import Register from './Register';
 import Login from './Login'; // Import Login component
-import CrowdManagement from './CrowdManagement';
-
+import Traffic from './Traffic'
+import Face from "./FaceRecog"
 function App() {
   return (
     <Router>
@@ -14,7 +14,10 @@ function App() {
           <Route index element={<IndexPage />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/crowdmanagement' element={<CrowdManagement />} />
+          {/* <Route path='/crowdmanagement' element={<CrowdManagement />} /> */}
+           <Route path='/face' element={<Face />} />
+           <Route path='/traffic' element={<Traffic />} />
+          
         </Route>
       </Routes>
     </Router>

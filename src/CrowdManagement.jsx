@@ -1,3 +1,4 @@
+
 import React , {useState , useEffect} from 'react';
 import MyMap from './map';
 import Table from './Table';
@@ -19,3 +20,4 @@ const CrowdManagement = () => {
 };
 
 export default CrowdManagement;
+
