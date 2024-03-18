@@ -15,6 +15,7 @@ export default function Header() {
                 <Link to={"/register"} className="text-white hover:text-red-900 transition duration-300 ease-in-out mr-4 text-lg">
                     Register
                 </Link>
+                
             </div>
         </nav>
     );
