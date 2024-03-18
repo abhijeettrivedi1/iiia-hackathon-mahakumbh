@@ -127,7 +127,23 @@ const Table = () => {
                         <div className="flex items-center">{d.Count}</div>
                       
                       </td>
-                      <td className="px-4 py-2">{"[" + d.Location[0]} , {d.Location[1] + "]"}</td>
+                      <td>
+                      <td className="px-4 py-2 text-green-400">{"[" + d.Location[0]} , {d.Location[1] + "]"}</td>
+                      </td>
+                      {
+                        d.Count>=150 && (
+                          <>
+                            <td className="px-4 py-2 text-red-400">{"ALERT"}</td>
+                          </>
+                        )
+                      }
+                        {
+                        d.Count<150 && (
+                          <> 
+                            <td className="px-4 py-2 text-green-400">{"NORMAL"}</td>
+                          </>
+                        )
+                      }
                       
                     </tr>
                   ))}
