@@ -15,8 +15,10 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('your_backend_url/login', formData);
-      console.log(response.data);
+      const response = await axios.post('https://gdscbackend-alpha.vercel.app/api/v1/login', formData);
+       console.log(response.data);
+      if(response.data.success) alert("Login Success")
+      else alert("Invali Cedentials")
       // Handle success or redirect to another page
     } catch (error) {
       console.error('Login failed:', error);

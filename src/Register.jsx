@@ -7,9 +7,7 @@ const Register = () => {
     name: '',
     email: '',
     password: '',
-    mobile: '',
-    role: '',
-    id: ''
+    
   });
 
   const handleChange = (e) => {
@@ -19,9 +17,12 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('your_backend_url/register', formData);
-      console.log(response.data);
+      const response = await axios.post('https://gdscbackend-alpha.vercel.app/api/v1/signup', formData);
+      //console.log(response.uccess);
       // Handle success or redirect to another page
+      console.log(response)
+      if(response.data.success) alert("User Registered Successfully !!!!")
+      else alert("Something Went Wrong")
     } catch (error) {
       console.error('Registration failed:', error);
       // Handle error
