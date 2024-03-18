@@ -51,7 +51,7 @@ function Face() {
 
   return (
     <div className="max-w-screen-lg mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold mb-6">Data from Firebase</h1>
+      <h1 className="text-3xl font-bold mb-6">Control room alert system</h1>
       <table className="w-full border-collapse border border-gray-300 mt-6">
         <thead className="bg-gray-200">
           <tr>
